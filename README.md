@@ -1,6 +1,6 @@
 </p><h2>Documentação da API - Gerenciamento de Personagens</h2>
 <h3>Visão Geral</h3>
-<p>Essa API oferece operações de gerenciamento de personagens, permitindo a criação, recuperação, atualização e exclusão de registros. É uma API RESTful que opera no banco de dados de personagens da série "The Boys".</p>
+<p>API RESTful que opera no banco de dados de personagens da série The Boys, permitindo a criação, recuperação, atualização e exclusão do registro de personagens.</p>
 <h3>Base URL</h3>
 <p>http://localhost:8080/seriesapi/webapi/personagens</p>
 
