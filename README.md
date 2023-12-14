@@ -1,17 +1,17 @@
-</p><h2>Documentação da API - Gerenciamento de Personagens</h2>
-<h3>Visão Geral</h3>
-<p>API RESTful que opera no banco de dados de personagens da série The Boys, permitindo a criação, recuperação, atualização e exclusão do registro de personagens.</p>
+</p><h2>API Documentation - Character Management</h2>
+<h3>Overview</h3>
+<p>RESTful API that operates on the character database of The Boys series, allowing the creation, retrieval, update, and deletion of character records.</p>
 <h3>Base URL</h3>
 <p>http://localhost:8080/seriesapi/webapi/personagens</p>
 
-<h3>Métodos</h3>
+<h3>Methods</h3>
 
-<h3>1. Listar Todos os Personagens</h3>
-	<p>Método: GET</p>
+<h3>1. List All Characters</h3>
+	<p>Method: GET</p>
 	<p>URL: /personagens</p>
-	<p>Descrição: Obtém uma lista de todos os personagens da série "The Boys".</p>
-	<p>Resposta de Sucesso: Código 200 (OK)</p>
-	<p>Exemplo de Resposta:</p>
+	<p>Description: Retrieves a list of all characters from "The Boys" series.</p>
+	<p>Success Response: Code 200 (OK)</p>
+	<p>Response Example:</p>
 	<pre>		    <p>
 	        [
 	            {
@@ -26,18 +26,18 @@
 	                "peso": "74.84Kg",
 	                "status": "Vivo"
 	            },
-	            // Outros personagens...
+	            // Other characters...
 	        ]
 	    </p>
 	  </pre>
 
-<h3>2. Obter um Personagem por ID</h3>
-	<p>Método: GET</p>
+<h3>2. Get a Character by ID</h3>
+	<p>Method: GET</p>
 	<p>URL: /personagens/{id}</p>
-	<p>Parâmetros de URL: {id}: O ID do personagem que deseja obter.</p>
-	<p>Descrição: Obtém os detalhes de um personagem com base no ID fornecido.</p>
-	<p>Resposta de Sucesso: Código 200 (OK)</p>
-	<p>Exemplo de Resposta:</p>
+	<p>URL Parameters: {id}: The ID of the character you want to retrieve.</p>
+	<p>Description: Retrieves details of a character based on the provided ID.</p>
+	<p>Success Response: Code 200 (OK)</p>
+	<p>Response Example:</p>
 	<pre>		    <p>
 	        {
 	             "id": 1,
@@ -54,14 +54,14 @@
 	    </p>
 	  </pre>
 
-<h3>3. Criar um Novo Personagem</h3>
-	<p>Método: POST</p>
+<h3>3. Create a New Character</h3>
+	<p>Method: POST</p>
 	<p>URL: /personagens</p>
-	<p>Descrição: Cria um novo personagem com os detalhes fornecidos.</p>
-	<p>Corpo da Requisição:</p>
+	<p>Description: Creates a new character with the provided details.</p>
+	<p>Request Body:</p>
 	<pre>			<p>
 	{
-	    "nome": "Novo Personagem",
+	    "nome": "New Character",
 	    "idade": "30",
 	    "especie": "Super",
 	    "genero": "Masculino",
@@ -73,27 +73,27 @@
 	}
 		</p>
 	</pre>
-	<p>Resposta de Sucesso: Código 201 (Created)</p>
+	<p>Success Response: Code 201 (Created)</p>
 
-<h3>4. Atualizar um Personagem</h3>
-	<p>Método: PUT</p>
+<h3>4. Update a Character</h3>
+	<p>Method: PUT</p>
 	<p>URL: /personagens/{id}</p>
-	<p>Parâmetros de URL: {id}: O ID do personagem que deseja atualizar.</p>
-	<p>Descrição: Atualiza os detalhes de um personagem com base no ID fornecido.</p>
-	<p>Corpo da Requisição (campos a serem atualizados):</p>
+	<p>URL Parameters: {id}: The ID of the character you want to update.</p>
+	<p>Description: Updates the details of a character based on the provided ID.</p>
+	<p>Request Body (fields to be updated):</p>
 	<pre>		<p>
 	{
-	    "nome": "Novo Nome",
+	    "nome": "New Name",
 	    "idade": "31",
-	    "status": "Morto"
+	    "status": "Dead"
 	}
 	</p>
 	</pre>
-	<p>Resposta de Sucesso: Código 200 (OK)</p>
+	<p>Success Response: Code 200 (OK)</p>
 
-<h3>5. Excluir um Personagem</h3>
-	<p>Método: DELETE</p>
+<h3>5. Delete a Character</h3>
+	<p>Method: DELETE</p>
 	<p>URL: /personagens/{id}</p>
-	<p>Parâmetros de URL: {id}: O ID do personagem que deseja excluir.</p>
-	<p>Descrição: Exclui um personagem com base no ID fornecido.</p>
-	<p>Resposta de Sucesso: Código 204 (No Content)</p>
+	<p>URL Parameters: {id}: The ID of the character you want to delete.</p>
+	<p>Description: Deletes a character based on the provided ID.</p>
+	<p>Success Response: Code 204 (No Content)</p>
